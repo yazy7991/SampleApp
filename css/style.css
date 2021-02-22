@@ -1,0 +1,49 @@
+body {
+  background-color: aquamarine;
+  margin: 0 auto;
+  padding: 0;
+}
+.wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "h h h"
+    "n n n"
+    "m m as"
+    "f f f";
+}
+header {
+  color: whitesmoke;
+  text-align: center;
+  grid-area: h;
+}
+nav {
+  background-color: cadetblue;
+  grid-area: n;
+}
+ul {
+  display: inline-flex;
+  padding: 1rem;
+}
+ul li {
+  list-style: none;
+  padding: 2rem;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  grid-area: m;
+  background-color: tomato;
+}
+aside {
+  grid-area: as;
+  background-color: violet;
+}
+footer {
+  color: whitesmoke;
+  text-align: center;
+  grid-area: f;
+  background-color: yellowgreen;
+}
